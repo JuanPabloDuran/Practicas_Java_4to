@@ -33,8 +33,11 @@ public class ViewsBlocDNotas extends javax.swing.JFrame {
         jm_Menu = new javax.swing.JMenu();
         jmi_Guardar = new javax.swing.JMenuItem();
         jmi_Leer = new javax.swing.JMenuItem();
+        jmi_cifrar = new javax.swing.JMenuItem();
+        jmi_descifrar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 51, 255));
 
         jta_Archivo.setColumns(20);
         jta_Archivo.setRows(5);
@@ -48,6 +51,12 @@ public class ViewsBlocDNotas extends javax.swing.JFrame {
         jmi_Leer.setText("Leer");
         jm_Menu.add(jmi_Leer);
 
+        jmi_cifrar.setText("Cifrar Texto");
+        jm_Menu.add(jmi_cifrar);
+
+        jmi_descifrar.setText("Descifrar Texto");
+        jm_Menu.add(jmi_descifrar);
+
         jmb_Archivo.add(jm_Menu);
 
         setJMenuBar(jmb_Archivo);
@@ -57,8 +66,8 @@ public class ViewsBlocDNotas extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(196, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -113,6 +122,8 @@ public class ViewsBlocDNotas extends javax.swing.JFrame {
     public javax.swing.JMenuBar jmb_Archivo;
     public javax.swing.JMenuItem jmi_Guardar;
     public javax.swing.JMenuItem jmi_Leer;
+    public javax.swing.JMenuItem jmi_cifrar;
+    public javax.swing.JMenuItem jmi_descifrar;
     public javax.swing.JTextArea jta_Archivo;
     // End of variables declaration//GEN-END:variables
 }
